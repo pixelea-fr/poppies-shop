@@ -7,16 +7,16 @@ Starter WP Theme
 ## Installation
 Dans le dossier `wp-content/themes` : 
 1. `git init`
-2. `git clone https://github.com/pixelea-fr/pix-starter.git`
+2. `git clone https://github.com/pixelea-fr/poppies-shop.git`
 3. `rm -rf .git`
-4. `cd pix-starter`
+4. `cd poppies-shop`
 5. `rm -rf .git`
 6. `npm install`
 
 Avant de poursuivre, réalisez ces tâches : 
 - Renommer le dossier du thème avec un nom correspondant au projet
-- Effectuer un rechercher/remplacer sur 'pixstudio' et le remplacer avec un slug correspondant au projet
-- Effectuer un rechercher/remplacer sur 'Pix-starter' et le remplacer avec un nom correspondant au projet
+- Effectuer un rechercher/remplacer sur 'poppies' et le remplacer avec un slug correspondant au projet
+- Effectuer un rechercher/remplacer sur 'poppies-shop' et le remplacer avec un nom correspondant au projet
 
 ## Créer un dépôt Git pour accueillir le thème
 Créer un repo Git __vide sans README__ 

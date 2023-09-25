@@ -3,13 +3,13 @@
  * Register nav menus locations
  */
 
- if ( ! function_exists( 'pixstudio_register_nav_menu' ) ) {
+ if ( ! function_exists( 'poppies_register_nav_menu' ) ) {
 
-	function pixstudio_register_nav_menu(){
+	function poppies_register_nav_menu(){
 		register_nav_menus( array(
-	    	'primary_menu' => __( 'Primary Menu', 'pixstudio' ),
-	    	'footer_menu'  => __( 'Footer Menu', 'pixstudio' ),
+	    	'primary_menu' => __( 'Primary Menu', 'poppies' ),
+	    	'footer_menu'  => __( 'Footer Menu', 'poppies' ),
 		) );
 	}
-	add_action( 'after_setup_theme', 'pixstudio_register_nav_menu', 0 );
+	add_action( 'after_setup_theme', 'poppies_register_nav_menu', 0 );
 }

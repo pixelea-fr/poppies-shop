@@ -18,7 +18,7 @@ const { src, dest, series, watch, parallel } = require('gulp'),
 
 const PRODUCTION = yargs.argv.prod;  
 const server = browserSync.create();
-const url = 'http://Pix-starter.local/';
+const url = 'http://poppies-shop.local/';
 const paths = {
   styles: {
     src: ["./src/scss/*.scss", "./src/scss/**/*.scss"],

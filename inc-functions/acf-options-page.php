@@ -8,8 +8,8 @@
  if( function_exists( 'acf_add_options_page' ) ) {
     
     acf_add_options_page(array(
-        'page_title'    => __( 'Réglages généraux', 'pixstudio' ),
-        'menu_title'    => __( 'Réglages généraux', 'pixstudio' ),
+        'page_title'    => __( 'Réglages généraux', 'poppies' ),
+        'menu_title'    => __( 'Réglages généraux', 'poppies' ),
         'menu_slug'     => 'theme-general-settings',
         'capability'    => 'edit_posts',
         'redirect'      => false

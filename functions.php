@@ -10,8 +10,8 @@ require_once 'inc-functions/acf-options-page.php';
 /**
  * Essential theme supports
  * */
-add_action('after_setup_theme','pixstudio_theme_setup');
-function pixstudio_theme_setup(){
+add_action('after_setup_theme','poppies_theme_setup');
+function poppies_theme_setup(){
     /** tag-title **/
     add_theme_support( 'title-tag' );
 
@@ -49,7 +49,7 @@ function pixstudio_theme_setup(){
 /**
  * Add custom logo for admin login screen and link to homepage
  */
-function pixstudio_filter_login_head() {
+function poppies_filter_login_head() {
 
 	if ( has_custom_logo() ) {
 		$image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
@@ -66,9 +66,9 @@ function pixstudio_filter_login_head() {
 		<?php
 	}
 }
-add_action( 'login_head', 'pixstudio_filter_login_head', 100 );
+add_action( 'login_head', 'poppies_filter_login_head', 100 );
 
-function pixstudio_new_wp_login_url() {
+function poppies_new_wp_login_url() {
 	return home_url();
 }
-add_filter('login_headerurl', 'pixstudio_new_wp_login_url');
+add_filter('login_headerurl', 'poppies_new_wp_login_url');

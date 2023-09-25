@@ -4,8 +4,8 @@
  */
 
 // Enqueue Scripts
-add_action( 'wp_enqueue_scripts', 'pixstudio_scripts' );
-function pixstudio_scripts() {
+add_action( 'wp_enqueue_scripts', 'poppies_scripts' );
+function poppies_scripts() {
 
     // If SCRIPT_DEBUG is enable, load unminified JS, if disabled load minified JS
 	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
@@ -16,7 +16,7 @@ function pixstudio_scripts() {
 }
 
 // Enqueue Block Editor Script
-add_action('enqueue_block_editor_assets', 'pixstudio_block_enqueues');
-function pixstudio_block_enqueues() {
+add_action('enqueue_block_editor_assets', 'poppies_block_enqueues');
+function poppies_block_enqueues() {
     wp_enqueue_script('pix-editor-scripts', get_template_directory_uri() . '/editor.js', array('wp-edit-post', 'wp-blocks', 'wp-dom-ready'), '', true);
 }

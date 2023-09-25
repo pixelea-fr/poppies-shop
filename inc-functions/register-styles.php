@@ -4,8 +4,8 @@
  */
 
 // Enqueue Styles
-add_action( 'wp_enqueue_scripts', 'pixstudio_styles' );
-function pixstudio_styles() {
+add_action( 'wp_enqueue_scripts', 'poppies_styles' );
+function poppies_styles() {
 	wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
 
@@ -18,13 +18,13 @@ function pixstudio_styles() {
 }
 
 // Enqueue Admin Styles
-add_action( 'admin_enqueue_scripts', 'pixstudio_admin_styles' );
-function pixstudio_admin_styles() {
+add_action( 'admin_enqueue_scripts', 'poppies_admin_styles' );
+function poppies_admin_styles() {
 	wp_enqueue_style( 'admin-styles', get_template_directory_uri() . '/assets/css/admin.css', false, '1.0.0' );
 }
 
 // Enqueue Block Editor styles
-add_action('enqueue_block_editor_assets', 'pixstudio_editor_styles');
-function pixstudio_editor_styles() {
-    wp_enqueue_style('pixstudio-editor-styles', get_template_directory_uri() . '/editor.css', array('wp-edit-blocks'));
+add_action('enqueue_block_editor_assets', 'poppies_editor_styles');
+function poppies_editor_styles() {
+    wp_enqueue_style('poppies-editor-styles', get_template_directory_uri() . '/editor.css', array('wp-edit-blocks'));
 }
