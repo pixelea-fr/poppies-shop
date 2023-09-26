@@ -1,3 +1,19 @@
-button {
-    color: purple;
+.button {
+    color: $white;
+    text-decoration: none;
+    background-color: var(--green);
+    border-radius: 100vw;
+    padding: 5px 20px 0;
+    font-family: $secondary-font-family;
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        border: 1px solid var(--green);
+        background-color: white;
+        color: var(--green);
+    }
 }
