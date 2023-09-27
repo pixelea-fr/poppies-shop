@@ -10,20 +10,43 @@
     position: relative;
 
     .content {
+        flex-direction: column-reverse;
         position: relative;
         justify-content: space-between;
 
+        .texte {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 2%;
+
+            p {
+                margin-bottom: 5px;
+            }
+        }
+
+        .image {
+            max-width: 100%;
+            padding: 2%;
+            height: auto;
+            margin-top: 15%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
 
         .logo {
             position: absolute;
-            max-width: 30vw;
+            width: 100%;
             height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             left: 50%;
             top: 0;
-            translate: -50% -100%;
+            translate: -50% -50%;
 
             &::after {
                 background-image: url('../../../../dist/image/backLogo.svg');
@@ -42,26 +65,28 @@
             }
         }
 
-        .texte {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            padding: 2%;
+        @include breakpoints(sm) {
+            flex-direction: row;
 
-            p {
-                margin-bottom: 5px;
+            .texte {
+
+                width: 50%;
+            }
+
+            .image {
+                max-width: 50%;
+                margin-top: 0%;
+
+            }
+
+            .logo {
+                width: 30vw;
+                translate: -50% -100%;
+
             }
         }
 
-        .image {
-            max-width: 50%;
-            padding: 2%;
-            height: auto;
 
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-        }
+
     }
 }

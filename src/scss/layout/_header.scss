@@ -3,6 +3,10 @@ header {
     align-items: center;
     $h : 60px;
     height: $h;
+    position: fixed;
+    z-index: 60;
+    background-color: $white;
+    width: 100%;
     .container {
         max-height: 100%;
         .site-branding {
