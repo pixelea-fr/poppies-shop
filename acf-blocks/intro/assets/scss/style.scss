@@ -47,10 +47,7 @@
             left: 50%;
             top: 0;
             translate: -50% -50%;
-
-            &::after {
-                background-image: url('../../../../dist/image/backLogo.svg');
-            }
+            border-radius: 50px;
 
             a {
                 width: 80%;

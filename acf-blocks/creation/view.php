@@ -17,7 +17,10 @@
             </div>
             <div class="right">
                 <?php echo wp_get_attachment_image($image_de_droite, 'full'); ?>
-                <?php echo $sous_image; ?>
+                <div class="te">
+                    <div class="text"><?php echo $sous_image; ?></div>
+                    <a class="button" href="#">Découvrez nos tissus</a>
+                </div>
             </div>
         </div>
     </section>

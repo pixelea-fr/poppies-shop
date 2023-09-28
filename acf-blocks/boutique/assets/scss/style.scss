@@ -1,0 +1,48 @@
+@import '../../../../src/scss/abstracts/all.scss';
+
+// Call all variables 
+.boutique {
+    position: relative;
+
+    .content {
+        @include breakpoints(md, max){
+           flex-direction: column-reverse;
+           gap: 20px;
+        }
+        .image{
+            max-width: 50%;
+            @include breakpoints(md, max){
+                max-width: 80%;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .texte {
+
+            position: absolute;
+            padding: 30px 70px;
+            max-width: 60%;
+            right: 0;
+            border-radius: 30px;
+            @include breakpoints(md, max){
+                position: relative;
+                max-width: 100%;
+                padding: 5%;
+            }
+            &::after{
+                width: 20%;
+                height: 40%;
+            }
+            .adress {
+                font-size: 20px;
+                margin: 20px 0;
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

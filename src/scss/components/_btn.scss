@@ -9,15 +9,29 @@
     font-size: 1.2em;
     text-align: center;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
-    &:hover{
+
+    &:hover {
         border: 1px solid var(--green);
         background-color: white;
         color: var(--green);
     }
-    @include breakpoints(sm){
-    width: fit-content;
 
+    @include breakpoints(sm) {
+        width: fit-content;
+
+    }
+
+    &.reverse {
+        background-color: white;
+        color: var(--green);
+        border: 1px solid var(--green);
+
+        &:hover {
+            background-color: var(--green);
+            border: 1px solid transparent;
+            color: white;
+        }
     }
 }

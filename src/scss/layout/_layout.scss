@@ -17,8 +17,9 @@ main {
         top: 0;
         width: 100%;
         height: 100%;
-        @include breakpoints(sm, max){
-        background-image: url('../../dist/image/back-pop-mobile.jpg');
+
+        @include breakpoints(sm, max) {
+            background-image: url('../../dist/image/back-pop-mobile.jpg');
 
         }
     }
@@ -34,7 +35,7 @@ section {
     grid-column: 2;
     font-family: $primary-font-family;
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     .content {
         display: flex;
@@ -45,18 +46,19 @@ section {
 
 .sew {
     background-color: $white;
-    border-radius: 100vw;
     border: 1px solid var(--green);
     position: relative;
+    border-radius: 30px;
 
-    &::after {
+    &::before {
         content: '';
         display: block;
         position: absolute;
-        width: 95%;
-        height: 95%;
-        top: 2.5%;
-        left: 2.5%;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        top: 5px;
+        left: 5px;
+        opacity: 0.8;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
