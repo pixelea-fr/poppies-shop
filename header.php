@@ -32,7 +32,7 @@
 		</div>
 		
 		<header id="masthead" class="header" role="banner">
-			<div class="container">
+			<div class="container etiq">
 				<div class="site-branding">
 					<?php the_custom_logo(); ?>
 				</div><!-- .site-branding -->

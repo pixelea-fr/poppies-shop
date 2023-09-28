@@ -1,6 +1,51 @@
-.back-top{
+.back-top {
     position: fixed;
     bottom: 5%;
     right: 5%;
+    background-color: var(--green);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    background-image: url('../../dist/image/up.svg');
+    background-size: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
 
+footer {
+    background-color: $white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    width: 90%;
+    margin: auto;
+    border-radius: 20vw;
+
+    .bottom-bar {
+        display: flex;
+        color: grey;
+        font-size: 10pt;
+    }
+
+    &:before {
+        content: '';
+        background-image: url('../../dist/image/bleu.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        right: 5%;
+        transform: rotateY(0.5turn)
+    }
+
+    ;
 }

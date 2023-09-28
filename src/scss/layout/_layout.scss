@@ -1,8 +1,9 @@
 main {
+
     display: grid;
     grid-template-columns: 5.979vw auto 5.979vw;
     background-color: var(--beige);
-    padding-top: 150px;
+    padding-top: 15vh;
     z-index: 0;
     position: relative;
 
@@ -23,11 +24,12 @@ main {
 
         }
     }
-
     @include breakpoints(sm) {
         grid-template-columns: 11.979vw auto 11.979vw;
+        padding-top: 20vh;
 
     }
+
 }
 
 section {
@@ -91,6 +93,7 @@ section {
         bottom: -40px;
         right: 5%;
         background: url('../../dist/image/etiqBack.png');
+        background-color: white;
         background-size: 100%;
         background-position: bottom;
         font-family: $secondary-font-family;

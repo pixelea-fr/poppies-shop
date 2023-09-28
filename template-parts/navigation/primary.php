@@ -5,7 +5,7 @@
 ?>   
 
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary', 'poppies' ); ?>">
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><p><?php esc_html_e( 'Menu', 'poppies' ); ?></p><span></span></button>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span></span></button>
     <?php
         wp_nav_menu(
             array(
