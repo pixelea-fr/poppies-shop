@@ -1,9 +1,8 @@
 main {
-
     display: grid;
     grid-template-columns: 5.979vw auto 5.979vw;
     background-color: var(--beige);
-    padding-top: 15vh;
+    padding-top: 90px;
     z-index: 0;
     position: relative;
 
@@ -26,7 +25,6 @@ main {
     }
     @include breakpoints(sm) {
         grid-template-columns: 11.979vw auto 11.979vw;
-        padding-top: 20vh;
 
     }
 

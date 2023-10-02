@@ -22,8 +22,8 @@ header {
     &.header--menu-is-open {
         .container {
 
-            .menu {
-                top: $h;
+            .menu-menu-container {
+                top: $h - 5;
             }
         }
     }
@@ -39,7 +39,7 @@ header {
         justify-content: space-between;
         background-color: white;
 
-        .menu {
+        .menu-menu-container {
             @include breakpoints(sm, max) {
                 position: absolute;
                 width: 100vw;

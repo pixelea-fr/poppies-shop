@@ -13,6 +13,4 @@
 		  setHeightToWidth();
 		});
 	  });
-	  
-
 })(jQuery);
