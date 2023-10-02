@@ -1,0 +1,121 @@
+@import '../../../../src/scss/abstracts/all.scss';
+
+// Call all variables 
+.nos-tissus {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .content{
+        gap: 20px;
+        .text {
+            width: 50%;
+        }
+    
+        .images {
+            position: relative;
+    
+            &.etiq {
+                margin-bottom: 25px;
+    
+                &::before {
+                    bottom: -20px;
+                }
+            }
+    
+            .galerie {
+                background-color: white;
+                border-radius: 30px;
+                border-color: transparent;
+                width: 40vw;
+                padding: 20px;
+    
+                &::before {
+                    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='red' stroke-width='4' stroke-dasharray='10%2c 20' stroke-dashoffset='26' stroke-linecap='square'/%3e%3c/svg%3e");
+                    z-index: 0;
+    
+                }
+    
+                img {
+                    margin: 0 10px;
+                }
+    
+                .slick-list {
+                    z-index: 2;
+                    position: relative;
+                }
+            }
+    
+            .dots {
+                opacity: 0;
+                transition: all 0.5s ease-in-out;
+                display: flex;
+                position: relative;
+                bottom: -5px;
+                justify-content: flex-start;
+                margin-left: 20px;
+    
+                ul {
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+    
+                    li {
+                        margin: 0 4px;
+    
+                        button {
+                            background: var(--beige);
+                            height: 20px;
+                            width: 20px;
+                            overflow: hidden;
+                            color: transparent;
+                            border: 2px solid white;
+                            border-radius: 10px;
+                            position: relative;
+                        }
+    
+                        &.slick-active,
+                        &:hover {
+                            button {
+                                cursor: pointer;
+    
+                                &::after {
+                                    content: '';
+                                    background-color: var(--green);
+                                    width: 10px;
+                                    height: 10px;
+                                    position: absolute;
+                                    border-radius: 10px;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &:hover {
+                .dots {
+                    opacity: 1;
+                }
+            }
+        }
+        @include breakpoints(sm, max) {
+            flex-direction: column;
+            .text{
+                width: 100%;
+            }
+            .images{
+                width: 100%;
+                .galerie{
+                    width: 90vw;
+                }
+            }
+        }
+    }
+
+}

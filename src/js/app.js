@@ -33,7 +33,7 @@
             $(".back-top").css("bottom", "5%");
         }
         else {
-            $(".back-top").css("bottom", "-5%");
+            $(".back-top").css("bottom", "-10%");
         }
     });
 
