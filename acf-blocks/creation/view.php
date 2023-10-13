@@ -19,7 +19,7 @@
                 <?php echo wp_get_attachment_image($image_de_droite, 'full'); ?>
                 <div class="te">
                     <div class="text"><?php echo $sous_image; ?></div>
-                    <a class="button" href="#">Découvrez nos tissus</a>
+                    <a class="button" alt="Nos Tissus" href="/nos-tissus">Découvrez nos tissus</a>
                 </div>
             </div>
         </div>

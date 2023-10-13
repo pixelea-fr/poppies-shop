@@ -50,16 +50,12 @@
             translate: -50% -50%;
             border-radius: 30px;
 
-            a {
-                width: 80%;
-            }
-
             img {
                 position: relative;
                 z-index: 2;
-                width: 100%;
+                width: 80%;
                 height: 100%;
-                padding: 10px 10px 5px 10px;
+                padding: 10px;
             }
         }
 
