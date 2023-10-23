@@ -33,6 +33,9 @@ footer {
         display: flex;
         color: grey;
         font-size: 10pt;
+        a {
+            color: grey;
+        }
     }
 
     &:before {
